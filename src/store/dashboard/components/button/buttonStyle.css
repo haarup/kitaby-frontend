@@ -1,0 +1,25 @@
+.action-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* styles.css */
+.action-button {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer !important;
+    transition: background-color 0.3s;
+}
+
+/* .action-button:hover {
+    background-color: #0056b3;
+} */
+
+.action-button:disabled {
+    /* background-color: #f9f9f9; */
+    cursor: not-allowed;
+}

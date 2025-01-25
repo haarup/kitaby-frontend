@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        border-radius: 16px;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .slider-img {
+        object-fit: cover;
+        position: absolute;
+        border-radius: 16px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <div
+      data-state="open"
+      data-vaul-overlay=""
+      data-vaul-snap-points="false"
+      data-vaul-snap-points-overlay="true"
+      data-vaul-animate="true"
+      class="fixed inset-0 bg-black/40 z-50"
+      style="pointer-events: auto"
+      data-aria-hidden="true"
+      aria-hidden="true"
+    ></div>
+    <div
+      role="dialog"
+      id="radix-:r0:"
+      aria-describedby="radix-:r2:"
+      aria-labelledby="radix-:r1:"
+      data-state="open"
+      data-vaul-drawer-direction="bottom"
+      data-vaul-drawer=""
+      data-vaul-delayed-snap-points="false"
+      data-vaul-snap-points="false"
+      data-vaul-custom-container="false"
+      data-vaul-animate="true"
+      class="bg-white flex flex-col rounded-t-[10px] mt-24 h-[90%] lg:h-[320px] fixed bottom-0 left-0 right-0 outline-none z-[100]"
+      tabindex="-1"
+      style="pointer-events: auto"
+    >
+      <div class="h-full overflow-scroll">
+        <div class="mb-[24px] z-[1000]">
+          <div class="pl-[20px] pr-[20px] pt-[20px] relative">
+            <div
+              class="absolute top-[40px] left-[30px] z-10 text-[16px] h-[31px] pl-4 pr-4 bg-[#E3FB03] text-[#000] rounded-[24px] flex justify-center items-center bg-opacity-100"
+            >
+              25% Off
+            </div>
+            <div class="slides">
+              <div class="relative w-full h-full">
+                <img
+                  alt="product"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="slider-img"
+                  src="https://ucarecdn.com/deb64339-867d-4e22-9a75-e3e70254a5c8//-/resize/600/"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
+              </div>
+              <div class="relative w-full h-full">
+                <img
+                  alt="product"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="fill"
+                  class="slider-img"
+                  src="https://ucarecdn.com/6a39f055-a319-47e4-86e9-4f9b177856b4//-/resize/600/"
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    inset: 0px;
+                    color: transparent;
+                  "
+                />
+              </div>
+            </div>
+            <div class="flex gap-2 items-baseline mt-[10px]">
+              <p class="mt-[8px] text-[18px] font-[600]">8000 IQD</p>
+            </div>
+            <p
+              class="-mt-1 text-[18px] opacity-50 text-ellipsis text-nowrap whitespace-nowrap truncate"
+            >
+              فارس من الممالك السبع
+            </p>
+          </div>
+          <div class="h-[1px] bg-[#f5f5f5] mt-[24px] mb-[24px]"></div>
+          <div class="pl-[20px] pr-[20px]">
+            <div class="flex gap-4 items-center">
+              <svg
+                width="16"
+                height="12"
+                viewBox="0 0 16 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.25 6H14.75M1.25 1.5H14.75M1.25 10.5H7.25"
+                  stroke="#848484"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              Description
+            </div>
+            <div class="mt-[14px] text-[16px] text-[#848484] pb-32 prose">
+              <p>كوبي بجودة ممتازة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-[28px] flex w-full bg-gradient-to-b from-transparent to-white sm:bottom-0"
+        style="bottom: 80px; position: fixed; justify-content: center"
+      >
+        <div class="inline-flex rounded-full overflow-hidden">
+          <div
+            class="react-ripples"
+            style="position: relative; display: inline-flex; overflow: hidden"
+          >
+            <button
+              class="text-[#fff] bg-black rounded-full text-[18px] w-[158px] h-[52px]"
+              style="pointer-events: all"
+            >
+              <div
+                class="flex justify-center items-center gap-2"
+                style="transform: none"
+              >
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 1V6M6 6V11M6 6H1M6 6H11"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                Add To Cart
+              </div></button
+            ><s
+              style="
+                position: absolute;
+                border-radius: 50%;
+                opacity: 0;
+                width: 35px;
+                height: 35px;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+              "
+            ></s>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
